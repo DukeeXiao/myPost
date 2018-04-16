@@ -1,30 +1,42 @@
 <template>
 	<div class="left-nav">
 		<ul>
-			<li>
-				<i class='icon iconfont icon-goumai'></i>
-				<div>收银</div>
-			</li>
-			<li>
-				<i class='icon iconfont icon-jinrudianpu'></i>
-				<div>店铺</div>
-			</li>
-			<li>
-				<i class='icon iconfont icon-hanbao'></i>
-				<div>商品</div>
-			</li>
-			<li>
-				<i class='icon iconfont icon-huiyuanqia'></i>
-				<div>会员</div>
-			</li>
-			<li>
-				<i class='icon iconfont icon-goumai'></i>
-				<div>抢购</div>
-			</li>
-			<li>
-				<i class='icon iconfont icon-shezhi'></i>
-				<div>设置</div>
-			</li>
+			<router-link to="/pos" class="link">
+				<li>
+					<i class='icon iconfont icon-goumai'></i>
+					<div>收银</div>
+				</li>
+			</router-link>
+			<router-link to="/store" class="link">
+				<li>
+					<i class='icon iconfont icon-jinrudianpu'></i>
+					<div>首页</div>
+				</li>
+			</router-link>
+			<router-link to="*" class="link">		
+				<li>
+					<i class='icon iconfont icon-hanbao'></i>
+					<div>商品</div>
+				</li>
+			</router-link>
+			<router-link to="*" class="link">	
+				<li>
+					<i class='icon iconfont icon-huiyuanqia'></i>
+					<div>会员</div>
+				</li>
+			</router-link>
+			<router-link to="*" class="link">	
+				<li>
+					<i class='icon iconfont icon-goumai'></i>
+					<div>抢购</div>
+				</li>
+			</router-link>
+			<router-link to="*" class="link">	
+				<li>
+					<i class='icon iconfont icon-shezhi'></i>
+					<div>设置</div>
+				</li>
+			</router-link>	
 		</ul>
 	</div>
 </template>
@@ -49,12 +61,18 @@
 		float: left;
 		width: 5%;
 	}
+	.left-nav .link {
+		text-decoration: none;
+		cursor=: pointer;
+		color: #fff;
+	}
 	.iconfont {
 		font-size: 24px;
 	}
 	.left-nav ul {
 		padding: 0;
 		margin: 0;
+
 	}
 	.left-nav ul li {
 		list-style: none;

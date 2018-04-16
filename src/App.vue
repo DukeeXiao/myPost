@@ -1,7 +1,13 @@
 <template>
   <div id="app">
+    <!--左侧导航-->
+    
     <leftNav></leftNav>
-    <router-view/>
+    
+    <!--操作区域-->
+    <div class="main">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 

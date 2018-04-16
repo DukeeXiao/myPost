@@ -9,7 +9,7 @@
               <el-table-column prop="goodsName" label="商品名称"></el-table-column>
               <el-table-column prop="count" label="数量" width="50"></el-table-column>
               <el-table-column prop="price" label="金额" width="70"></el-table-column>
-              <el-table-column label="操作" width="170" fixed="right">
+              <el-table-column label="操作" width="150" fixed="right">
                 <template scope="scope">
                   <el-button type="text" size="small" @click="lessOrderList(scope.row)">减少</el-button>
                   <el-button type="text" size="small" @click="addOrderList(scope.row)">增加</el-button>
@@ -37,7 +37,7 @@
         </el-tabs>
       </el-col>
       <!-- 商品展示 -->
-      <el-col :span="15">
+      <el-col :span="17">
         <div class="often-goods">
           <div class="title">常用商品</div>
           <div class="often-goods-list">
@@ -217,6 +217,7 @@ export default {
   .pos {
     font-size: 12px;
     text-align: center;
+    margin-left: 70px;
   }
   .pos-order {
     background-color: #F9FAFC;
